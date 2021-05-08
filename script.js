@@ -202,7 +202,7 @@ class App {
 
   _renderWorkoutMarker(workout) {
     // marker = new L.Marker(e.latlng, {draggable:true});
-   let marker = new L.Marker(workout.coords)
+   let marker = new L.Marker(workout.coords, { draggable: true });
    this.#map.addLayer(marker);
       marker.bindPopup(
         L.popup({
